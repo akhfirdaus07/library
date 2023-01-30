@@ -17,6 +17,8 @@ function displayBooks(){
 }
 
 
+
+
 let modalBtns = [...document.querySelectorAll(".button")];
 modalBtns.forEach(function (btn) {
   btn.onclick = function () {
