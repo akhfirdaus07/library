@@ -15,7 +15,7 @@ function Book(title, author, pages, read) {
     // the constructor
     this.title = form.title.value; 
     this.author = form.author.value; 
-    this.pages = form.pages.value + 'pg'; 
+    this.pages = form.pages.value; 
     this.read = form.read.checked; 
 } 
 
@@ -24,11 +24,13 @@ let newBook;
 function addBookToLibrary(event) {
     // do stuff here
     event.preventDefault();
+    
 
     newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
     render();
     form.reset();
+    document.getElementById("modalOne").style.display = 'none';
 }
 
 
