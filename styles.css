@@ -39,6 +39,7 @@ h1{
 .content{
     background-color: lightgrey;
     padding-bottom: 3rem;
+    padding-left: 1rem;
 
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -161,6 +162,61 @@ input {
 .book{
     background-color: white;
     border-radius: 10px;
-    height: 20rem;
-    width:20rem;
+    height: auto;
+    width:15rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    margin: 20px;
 }
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .author {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .pages {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .content .readBtn { 
+    font-size: 1rem;
+    height: 35px;
+    width: 110px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #removeBtn {
+    font-size: 1rem;
+    height: 35px;
+    width: 110px;
+
+    background-color: #d7d9da;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #addBtn {
+    /* font-size: 20px;
+    height: 35px;
+    width: 110px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 3px black; */
+  }

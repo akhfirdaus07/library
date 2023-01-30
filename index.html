@@ -34,7 +34,7 @@
     <div id="modalOne" class="modal">
         <div class="modal-content">
           <div class="contact-form">
-            <form action="">
+            <form id="form" action="/javascript.js">
                 <h2>Add New Book</h2>
               
                 <input class="title" type="text" name="title" placeholder="Title" required/>
@@ -45,7 +45,7 @@
                     <input type="checkbox" id="read" name="read" value="read" required>
                 </div>
                 
-              <button type="submit" href="">Submit</button>
+              <button type="submit" form="form" id="addBtn">Submit</button>
             </form>
           </div>
         </div>
