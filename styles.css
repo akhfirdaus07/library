@@ -1,0 +1,66 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    margin: 0;
+    
+    display:grid;
+    grid-template-rows: 1fr 6fr 0.5fr;
+}
+
+.navbar{
+    background-color: white;
+    padding: 0 5rem;    
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar button{
+    background-color: lightgrey;
+    margin-left: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    font-size: large;
+}
+
+.navbar button:hover{
+    filter: brightness(90%);
+}
+
+.content{
+    background-color: lightgrey;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.content button{
+    background-color: lightgrey;
+    margin-left: 1rem;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    border:none;
+    text-align: center;
+    font-size:x-large;
+}
+
+.content button:hover{
+    filter: brightness(90%);
+}
+
+
+footer{
+    background-color: grey;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.fa-github {
+    color: black;
+    padding-left: 0.5rem;
+}
