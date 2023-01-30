@@ -21,27 +21,25 @@
     </div>
     <div class="content ">
         <p>
-            <button class="button" data-modal="modalOne">+ Add Book</button>
+            <button class="button" data-modal="modalOne">+ Add New Book</button>
         </p>
     </div>
 
     <div id="modalOne" class="modal">
         <div class="modal-content">
           <div class="contact-form">
-            <a class="close">W&times;</a>
-            <form action="/">
-              <h2>Contact Us</h2>
-              <div>
-                <input class="fname" type="text" name="name" placeholder="Full name" />
-                <input type="text" name="name" placeholder="Email" />
-                <input type="text" name="name" placeholder="Phone number" />
-                <input type="text" name="name" placeholder="Website" />
-              </div>
-              <span>Message</span>
-              <div>
-                <textarea rows="4"></textarea>
-              </div>
-              <button type="submit" href="/">Submit</button>
+            <form action="">
+                <h2>Add New Book</h2>
+              
+                <input class="title" type="text" name="title" placeholder="Title" required/>
+                <input type="text" name="Author" placeholder="Author" required/>
+                <input type="number" name="pages" placeholder="Number of pages" required/>
+                <div class="read">
+                    <label for="read">Have you read it?</label>
+                    <input type="checkbox" id="read" name="read" value="read" required>
+                </div>
+                
+                <button type="submit" href="">Submit</button>
             </form>
           </div>
         </div>
