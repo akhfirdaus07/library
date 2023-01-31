@@ -31,8 +31,6 @@ function addBookToLibrary(event) {
     document.getElementById("modalOne").style.display = 'none';
 }
 
-
-
 //Creates book visual in browser
 function render() {
     const display = document.querySelector('.books-container');
@@ -52,7 +50,7 @@ function createBook(item) {
     const authDiv = document.createElement('div');
     const pageDiv = document.createElement('div');
     const removeBtn = document.createElement('button');
-    const readBtn = document.createElement('button');
+    const readBtn = document.createElement('button'); 
     
     
     bookDiv.classList.add('book');
