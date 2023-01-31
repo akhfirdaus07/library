@@ -1,10 +1,8 @@
-render();
-
 //button event listeners for create new book, add new book to page, close popup
 const addBtn = document.querySelector('#addBtn');
 addBtn.addEventListener('click', addBookToLibrary);
 
-let myLibrary = [
+let myLibrary=[
     {
         title: "A Game of Thrones",
         author: "George R. R. Martin",
@@ -112,3 +110,5 @@ window.onclick = function (event) {
     event.target.style.display = "none";
   }
 };
+
+render();
