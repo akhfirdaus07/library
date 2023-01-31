@@ -1,3 +1,5 @@
+render();
+
 //button event listeners for create new book, add new book to page, close popup
 const addBtn = document.querySelector('#addBtn');
 addBtn.addEventListener('click', addBookToLibrary);
@@ -24,8 +26,6 @@ let newBook;
 function addBookToLibrary(event) {
     // do stuff here
     event.preventDefault();
-    
-
     newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
     render();
@@ -90,20 +90,15 @@ function createBook(item) {
 
     removeBtn.addEventListener('click', () => {
         myLibrary.splice(myLibrary.indexOf(item),1);
-        // setData()
         render();
     });
 
     //add toggle ability to each book 'read' button on click
     readBtn.addEventListener('click', () => { 
         item.read = !item.read; 
-        // setData(); 
         render();
     }); 
 };
-
-render();
-
 
 let modalBtns = [...document.querySelectorAll(".button")];
 modalBtns.forEach(function (btn) {

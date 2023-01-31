@@ -1,5 +1,5 @@
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Tahoma, sans-serif;
     height: 100vh;
     margin: 0;
     
@@ -210,13 +210,4 @@ input {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-  
-  #addBtn {
-    /* font-size: 20px;
-    height: 35px;
-    width: 110px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: solid 3px black; */
   }
