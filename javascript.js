@@ -2,32 +2,53 @@
 const addBtn = document.querySelector('#addBtn');
 addBtn.addEventListener('click', addBookToLibrary);
 
-let myLibrary=[
-    {
-        title: "A Game of Thrones",
-        author: "George R. R. Martin",
-        pages: 694,
-        read: false,
-    },
-];
+// let myLibrary=[
+//     {
+//         title: "A Game of Thrones",
+//         author: "George R. R. Martin",
+//         pages: 694,
+//         read: false,
+//     },
+// ];
 
-function Book(title, author, pages, read) {
-    // the constructor
-    this.title = form.title.value; 
-    this.author = form.author.value; 
-    this.pages = form.pages.value; 
-    this.read = form.read.checked; 
-} 
+// function Book(title, author, pages, read) {
+//     // the constructor
+//     this.title = form.title.value; 
+//     this.author = form.author.value; 
+//     this.pages = form.pages.value; 
+//     this.read = form.read.checked; 
+// };
 
-let newBook;
 
-function addBookToLibrary(event) {
+const title=document.getElementById("title");
+const author=document.getElementById("author");
+const pages=document.getElementById("pages");
+const read=document.getElementById("read");
+
+let myLibrary=[];
+
+class Book {
+    constructor(title, author, pages, read){
+        this.title=title;
+        this.author =author; 
+        this.pages =pages; 
+        this.read =read;
+    }
+}
+
+let newBook = new Book("A Game of Thrones","George R. R. Martin",694,false);
+myLibrary.push(newBook);
+
+function addBookToLibrary() {
     // do stuff here
-    event.preventDefault();
-    newBook = new Book(title, author, pages, read);
+    if(!title.value||!author.value||!pages.value){
+        alert("Field must not be empty!");
+        return;   
+    }
+    newBook = new Book(title.value, author.value, pages.value, read.checked);
     myLibrary.push(newBook);
-    render();
     form.reset();
+    render();
     document.getElementById("modalOne").style.display = 'none';
 }
 
