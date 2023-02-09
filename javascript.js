@@ -1,25 +1,3 @@
-//button event listeners for create new book, add new book to page, close popup
-const addBtn = document.querySelector('#addBtn');
-addBtn.addEventListener('click', addBookToLibrary);
-
-// let myLibrary=[
-//     {
-//         title: "A Game of Thrones",
-//         author: "George R. R. Martin",
-//         pages: 694,
-//         read: false,
-//     },
-// ];
-
-// function Book(title, author, pages, read) {
-//     // the constructor
-//     this.title = form.title.value; 
-//     this.author = form.author.value; 
-//     this.pages = form.pages.value; 
-//     this.read = form.read.checked; 
-// };
-
-
 const title=document.getElementById("title");
 const author=document.getElementById("author");
 const pages=document.getElementById("pages");
@@ -36,8 +14,13 @@ class Book {
     }
 }
 
+// Add default book
 let newBook = new Book("A Game of Thrones","George R. R. Martin",694,false);
 myLibrary.push(newBook);
+
+const addBtn = document.querySelector('#addBtn');
+//button event listeners for create new book, add new book to page, close popup
+addBtn.addEventListener('click', addBookToLibrary);
 
 function addBookToLibrary() {
     // do stuff here
@@ -72,8 +55,7 @@ function createBook(item) {
     const pageDiv = document.createElement('div');
     const removeBtn = document.createElement('button');
     const readBtn = document.createElement('button'); 
-    
-    
+
     bookDiv.classList.add('book');
     bookDiv.setAttribute('id', myLibrary.indexOf(item));
 
