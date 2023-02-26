@@ -1,4 +1,4 @@
 # library
-library project from The Odin Project
+library project 
 
-https://www.theodinproject.com/lessons/node-path-javascript-library
+Live Demo: https://akhfirdaus07.github.io/library/
